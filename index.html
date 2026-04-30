@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- External library (FontAwesome) for the Home icon and Skills logos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Task 1 & Task 8: Styled name and Home icon on the top-left -->
+    <!-- Task 2: Navigation bar with 4 options -->
+    <nav class="navbar">
+        <div class="nav-brand">
+            <a href="#about" title="Home"><i class="fas fa-home"></i></a>
+            <span class="styled-name">Stephen Heibel</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#recommendations">Recommendations</a></li>
+        </ul>
+    </nav>
+
+    <!-- Task 3: "About Me" section with unique profile image, name, and summary -->
+    <section id="about" class="about-section">
+        <!-- Ensure your image file is in the same folder as this HTML file -->
+        <img src="OptimusGarth.jpg" alt="Stephen Heibel Profile Picture" class="profile-img">
+        <h1>Stephen Heibel</h1>
+        <p>Hello! I am a passionate Web Developer with 3 years of experience in creating dynamic and user-friendly web applications. I love turning complex business logic into simple, beautiful, and intuitive designs.</p>
+    </section>
+
+    <!-- Task 4: Skills section with logos and text -->
+    <section id="skills" class="skills-section">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card"><i class="fab fa-html5"></i> <span>HTML5</span></div>
+            <div class="skill-card"><i class="fab fa-css3-alt"></i> <span>CSS3</span></div>
+            <div class="skill-card"><i class="fab fa-js"></i> <span>JavaScript</span></div>
+        </div>
+    </section>
+
+    <!-- Task 5: 3 Unique Projects -->
+    <section id="projects" class="projects-section">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>E-Commerce Dashboard</h3>
+                <p>A responsive admin dashboard for an online store, providing real-time sales metrics and inventory tracking.</p>
+            </div>
+            <div class="project-card">
+                <h3>Weather Application</h3>
+                <p>A web app that fetches real-time weather data from a RESTful API and visualizes global climate conditions.</p>
+            </div>
+            <div class="project-card">
+                <h3>Task Tracker Pro</h3>
+                <p>A productivity application to manage daily objectives, featuring local storage caching and drag-and-drop lists.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Task 6: 3 Unique Recommendations -->
+    <section id="recommendations" class="recommendations-section">
+        <h2>Recommendations</h2>
+        <div id="recommendation-list" class="recommendation-list">
+            <div class="recommendation-card">"Stephen is a fantastic developer who always delivers high-quality work on time. Highly recommended!" <br><br>- John Smith, Senior Engineer</div>
+            <div class="recommendation-card">"A great team player with excellent problem-solving skills. It was a pleasure working with Stephen." <br><br>- Sarah Connor, Project Manager</div>
+            <div class="recommendation-card">"Stephen's attention to detail in front-end development is unmatched. He truly cares about user experience." <br><br>- Mike Johnson, UX Designer</div>
+        </div>
+
+        <!-- Task 7 & Task 9: Add recommendation form & submission -->
+        <div class="add-recommendation">
+            <h3>Leave a Recommendation</h3>
+            <textarea id="new_recommendation" placeholder="Write your recommendation here..."></textarea>
+            <button onclick="addRecommendation()">Submit</button>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
